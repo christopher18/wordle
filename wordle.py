@@ -332,5 +332,6 @@ def main(_):
 
         update_wordle(wordle, guess, result)
     print(f"The answer is {wordle.get_filtered_solutions()[0]}")
+    
 if __name__ == "__main__":
     app.run(main)
