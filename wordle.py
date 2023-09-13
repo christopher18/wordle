@@ -215,7 +215,7 @@ class Wordle:
         guess_to_rem = defaultdict(int)
         
         for i, sol in enumerate(filtered_solutions):
-            for guess in self.get_guesses:
+            for guess in self.get_guesses():
                 greens, greens_not, yellows, grays = self.greens.copy(), copy.deepcopy(self.greens_not), self.yellows.copy(), self.grays.copy()
                 sol_dict = dict()
                 for c in sol:
